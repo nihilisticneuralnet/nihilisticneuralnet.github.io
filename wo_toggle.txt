@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your_username.space</title>
+    <style>
+        /* Global styles */
+        :root {
+            --bg-color: #000000;
+            --text-color: #e0e0e0;
+            --accent-color: #5bc2e7;
+            --link-color: #3498db; 
+            --sidebar-bg: #000000;
+            --border-color: #000000;
+        }
+        
+        body.light-theme {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --accent-color: #5bc2e7; 
+            --link-color: #2980b9;
+            --sidebar-bg: #e0e0e0;
+            --border-color: #cccccc;
+        }
+        
+        body {
+            font-family: 'Space Mono', monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        /* .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        } */
+        .container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;  /* Add this */
+    z-index: 1;  /* Add this */
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    position: relative;  /* Add this */
+    z-index: 1;  /* Add this */
+}
+        /* header { 
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        } */
+        
+        h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .profile-section {
+            flex: 7;
+            margin-right: 20px;
+        }
+        
+        .sidebar {
+            flex: 3;
+            background-color: var(--sidebar-bg);
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        /* .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        } */
+
+        .profile-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+/* 
+        .profile-header {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+         */
+        .profile-image {
+            width: 130px;
+            height: 130px;
+            border-radius: 5px;
+            background-color: #1e1e1e;
+            margin: 0 auto 20px auto; /* Center horizontally and add margin below */
+        }
+        
+        .profile-info {
+            flex-grow: 1;
+        }
+        
+        .profile-name {
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        
+        .highlight {
+            color: var(--accent-color);
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 15px;
+        }
+        
+        .section-title {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            display: flex;
+        }
+        
+        li:before {
+            content: "-";
+            margin-right: 10px;
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+       
+        .quote {
+            font-style: italic;
+            margin: 20px 0;
+        }
+        
+        .button-img {
+            width: 100%;
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        
+        .connect-icons {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .connect-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .connect-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            color: #e0e0e0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 14px;
+        }
+        
+
+    canvas {
+        overflow: hidden;
+        color: #fefeff;
+        position: fixed;
+        width: 100vw;
+        /* opacity: 0.2;  */
+        height: 100vh;
+        left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;  
+    }
+    </style>
+</head>
+<body>
+    <canvas id="background-animation"></canvas>
+
+    <header>
+        <h1>ηιʜιλιѕτιᴄ ηєυяαʟ ηєτωøяκ</h1>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-image">
+                        <!-- Replace with your profile image -->
+                        <img src="image.jpeg" alt="Profile Picture" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="profile-info">
+                        <p>Hi, I'm <span class="highlight">Parthenos</span>, a 1.2e+52 Planck's time old <span class="highlight">with an interest in mechanistic intepretability, consciousness, philosophy and some random shits</span></p>
+                        <p>Apart from programming, I am cinephile, avid fiction book reader and fart a lot. I've been mainly programming in Python, and I'm currently learning [language2].</p>
+                    </div>
+                </div>
+                
+                <p>a quote in italic</p>
+                
+                
+                <div class="section">
+                    <h2 class="section-title">Projects</h2>
+                    <ul>
+                        <li><a href="#">project_name</a> - Description of what this project does</li>
+                        <li><a href="#">another_project</a> - Description of what this project does</li>
+                        <li><a href="#">cool_system</a> - Description of what this project does</li>
+                        <li><a href="#">final_project</a> - Description of what this project does</li>
+                        <li>And more... can be found on my <a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Publications</h2>
+                    <ul>
+                        <li><a href="#">publication_title</a> - Currently a work in progress</li>
+                        <li>More to come...</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Competitions</h2>
+                    <ul>
+                        <li><a href="#">publication_title</a> - Currently a work in progress</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 class="section-title">Connect</h2>
+                    <div class="connect-icons">
+                        <div class="connect-item">
+                            <!-- GitHub icon -->
+                            <svg class="connect-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            <a href="https://github.com/yourusername">github.com/yourusername</a>
+                        </div>
+                        <div class="connect-item">
+                            <!-- Twitter/X icon -->
+                            <svg class="connect-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                            <a href="https://x.com/yourusername">x.com/yourusername</a>
+                        </div>
+                        <div class="connect-item">
+                            <!-- Email icon -->
+                            <svg class="connect-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>yourname[at]example[dot]com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            <p>forked from your_username.space</p>
+        </div>
+    </div>
+
+     <script src="script.js"></script>
+     <script src="ps.js"></script>
+</body>
+</html>
