@@ -1,0 +1,185 @@
+/* Global styles */
+:root {
+    --bg-color: #000000;
+    --text-color: #e0e0e0;
+    --accent-color: #5bc2e7;
+    --link-color: #3498db; 
+    --sidebar-bg: #000000;
+    --border-color: #000000;
+}
+
+body.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #5bc2e7; 
+    --link-color: #3498db;
+    --sidebar-bg: #e0e0e0;
+    --border-color: #cccccc;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-section {
+    flex: 7;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 3;
+    background-color: var(--sidebar-bg);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #000000;
+    margin: 0 auto 20px auto;
+    overflow: hidden; 
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-name {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+.section {
+    margin-bottom: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+.section-title {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+li:before {
+    content: "-";
+    margin-right: 10px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.quote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.button-img {
+    width: 100%;
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.connect-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.connect-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #e0e0e0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    font-size: 10px;
+}
+
+.fun-fact {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+canvas {
+    overflow: hidden;
+    color: #fefeff;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;  
+}
