@@ -10,3 +10,17 @@ This project includes code from  [Ali Rehan Haider](https://codepen.io/Irehan), 
             [MIT Licensed](https://opensource.org/license/mit/)
 
 **Please note that this code is used in accordance with the terms of the license.**
+
+
+
+https://codepen.io/KrofDrakula/pen/qdVEVP
+
+https://codepen.io/hunnitgz-Aziz/pen/moZQBg
+
+https://codepen.io/aecend/pen/WbONyK
+
+https://codepen.io/ImagineProgramming/pen/LpOJzM
+
+https://codepen.io/ImagineProgramming/pen/zxMwvv
+
+https://codepen.io/JizzleMaster/pen/dPQeRo
